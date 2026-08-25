@@ -108,7 +108,7 @@ class MainScreen(Screen):
 
                 # Pausa entre peticiones para no saturar el servidor y reducir
                 # el riesgo de bloqueo por comportamiento tipo bot
-                await asyncio.sleep(0.5)
+                await asyncio.sleep(1)
             self.update_custom_process_log(CustomRule(orientation="horizontal", line_style="dashed"))
             self.update_custom_process_log(CustomLabel(text="[red bold]\u2713 Scraper finalizado[/red bold]"))
         except Exception as e:
