@@ -1,17 +1,13 @@
-from textual.widgets import Static
-
-from src.app.widgets.custom_label import CustomLabel
+from textual.containers import ScrollableContainer
 
 
-class Custom(Static):
-    def __init__(self,title, **kwargs):
+class CustomProcessLog(ScrollableContainer):
+    def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.__title = title
+    def add_widget(self, widget):
+        self.mount(widget)
+        self.scroll_end()
 
-    def compose(self):
-        yield CustomLabel(text=self.__title)
-        yield Static("", id="")
-
-    def show_widget(self, widgets):
-        self.mount(widgets)
+    def remove_widget(self):
+        self.remove_children()

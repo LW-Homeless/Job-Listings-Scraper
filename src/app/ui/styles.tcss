@@ -1,0 +1,50 @@
+/* Estilos Header */
+Header {
+    height: 1;
+    color: $accent
+}
+
+HeaderIcon {
+    display: none;
+}
+
+/* Estilos Custom-Panel */
+CustomPanel {
+    border: round rgb(120, 120, 120);
+    padding-left: 1;
+    padding-right: 1;
+}
+
+#left_panel {
+    width: 50%;
+    height: 100%;
+}
+
+#right_panel{
+    width: 50%;
+    height: 100%;
+}
+
+
+/* Estilos Custom-progress-log  */
+CustomProcessLog {
+    border: round rgb(120, 120, 120);
+}
+
+/* Estilos CustomLabel */
+CustomLabel {
+    color: $success;
+    text-style: bold;
+    text-align: justify;
+    margin-left: 1;
+    margin-right: 1;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+
+/* Estilos Custom-rule */
+CustomRule {
+    margin-left: 1;
+    margin-right: 1;
+}
